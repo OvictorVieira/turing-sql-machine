@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
     },
     module: {
         rules: [
@@ -13,20 +13,24 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader'
-                }
-            }
-        ]
+                    loader: 'babel-loader',
+                },
+            },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html'
-        })
+            template: './src/index.html',
+        }),
     ],
     devServer: {
-        static: './dist'
+        static: './dist',
     },
     resolve: {
-        extensions: ['.js', '.jsx']
-    }
+        extensions: ['.js', '.jsx'],
+    },
 };
