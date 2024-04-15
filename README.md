@@ -106,7 +106,7 @@ However, in scenarios where an even more refined level of precision or a more sp
    - When creating a custom model, relevant datasets can be utilized to train the model according to the specific needs of the application.
    - Training with data allows the model to learn from specific examples, better adjusting to the characteristics of the problem and improving its ability to produce more suitable results.
    - **Example of Data for Training Specific Model**
-      - ![Example of Data for Training]([path/to/image.jpg](https://github.com/OvictorVieira/turing-sql-machine/assets/37859445/7ec4bb15-3b3d-457a-97f7-84e464ffdf73))
+      - ![Example of Data for Training](https://github.com/OvictorVieira/turing-sql-machine/assets/37859445/7ec4bb15-3b3d-457a-97f7-84e464ffdf73)
 
 #### Considerations Regarding Costs:
 
