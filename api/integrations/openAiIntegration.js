@@ -29,7 +29,10 @@ const streamOpenAiText2Sql = async (prompt) => {
                     role: "system",
                     content: SYSTEM_CONTENT_BOOSTER,
                 },
-                { role: "user", content: prompt },
+                { 
+                    role: "user", 
+                    content: prompt 
+                },
             ],
             model: "gpt-4-turbo",
             response_format: { type: "json_object" },
