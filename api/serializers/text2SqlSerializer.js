@@ -1,4 +1,4 @@
-const OpenAiDataFetchException = require("../exceptions/OpenAiDataFetchException");
+const OpenAiDataFetchException = require("../exceptions/openAiDataFetchException");
 
 const serializeResponse = (promptResponse) => {
     if(promptResponse === undefined) {
