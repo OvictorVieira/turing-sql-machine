@@ -1,6 +1,6 @@
 const OpenAI = require("openai");
 
-const OpenAiDataFetchException = require("../exceptions/OpenAiDataFetchException");
+const OpenAiDataFetchException = require("../exceptions/openAiDataFetchException");
 
 const SYSTEM_CONTENT_BOOSTER = "" +
     "Profession/Role: You are a Database Administrator, responsible for managing various database technologies and ensuring data integrity and availability.\n" +
@@ -20,7 +20,7 @@ const SYSTEM_CONTENT_BOOSTER = "" +
 const streamOpenAiText2Sql = async (prompt) => {
     try {
         const openai = new OpenAI({
-            apiKey: '',
+            apiKey: process.env.OPEN_AI_API_KEY,
         });
 
         const completion = await openai.chat.completions.create({
