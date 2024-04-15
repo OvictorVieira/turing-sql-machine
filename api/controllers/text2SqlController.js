@@ -1,4 +1,4 @@
-const OpenAiDataFetchException = require("../exceptions/OpenAiDataFetchException");
+const OpenAiDataFetchException = require("../exceptions/openAiDataFetchException");
 const { streamOpenAiText2Sql } = require("../integrations/openAiIntegration");
 const { preparePrompt } = require("../services/text2SqlService");
 const { serializeResponse } = require("../serializers/text2SqlSerializer");
