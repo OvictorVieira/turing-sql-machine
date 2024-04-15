@@ -8,6 +8,7 @@ The Turing SQL Machine is an intelligent application designed to generate SQL qu
 - [Documentations](#documentations)
 - [Project Structure](#project-structure)
 - [Backend Setup](#backend-setup)
+- [Expanding and Enhancing the Application](#expanding-and-enhancing-the-application)
 
 ## Prerequisites
 
