@@ -33,7 +33,7 @@ To access the documentation click [here](https://documenter.getpostman.com/view/
 
 ### Postman Collection
 
-To test the API endpoints, you can use the provided Postman collection. [Download the collection here]() and import it into your Postman application.
+To test the API endpoints, you can use the provided Postman collection. [Download the collection here](https://github.com/OvictorVieira/turing-sql-machine/files/14984014/postman_collection.json.zip) and import it into your Postman application.
 
 To the **local** environment use [localhost:3000](http://localhost:3000) as the `url` variable value.
 
