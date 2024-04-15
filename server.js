@@ -1,3 +1,4 @@
+require('dotenv').config();
 const app = require('./api');
 const { PORT } = require('./config/server');
 
