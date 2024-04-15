@@ -6,8 +6,8 @@ const errorHandler = require('./middlewares/errorHandler');
 const cors = require("cors");
 
 app.use(cors());
+app.use('/', routes);
 app.use(notFound);
 app.use(errorHandler);
-app.use('/', routes);
 
 module.exports = app;
