@@ -89,3 +89,33 @@ turing-sql-machine/
 Navigate to the project root directory.
 - Install the required dependencies using npm install.
 - Start the backend server using `npm start`.
+
+## Expanding and Enhancing the Application
+
+The current application utilizes the `gpt-4-turbo` model from OpenAI to generate SQL queries from texts. 
+This model is robust and capable of meeting the current needs of the test, providing accurate and useful results. 
+However, in scenarios where an even more refined level of precision or a more specific approach is required, it is possible to expand and enhance the application.
+
+#### Possibilities for Expansion:
+
+1. **[Fine-Tuning of the Model](https://platform.openai.com/docs/guides/fine-tuning):**
+   - The Fine-Tuning technique offered by OpenAI can be explored, allowing the creation of a customized model that is more tailored to the specific requirements of the problem.
+   - With Fine-Tuning, it is possible to train the model with domain-specific or application-specific data, thereby increasing its ability to provide more accurate and relevant results.
+
+2. **[Utilization of Data for Training](https://platform.openai.com/docs/guides/fine-tuning/preparing-your-dataset):**
+   - When creating a custom model, relevant datasets can be utilized to train the model according to the specific needs of the application.
+   - Training with data allows the model to learn from specific examples, better adjusting to the characteristics of the problem and improving its ability to produce more suitable results.
+
+![Example of Data for Training](path/to/image.jpg)
+
+#### Considerations Regarding Costs:
+
+While it is possible to enhance the application with techniques such as Fine-Tuning and training with data, it is important to consider the costs involved in this process:
+
+- **Cost of Using the OpenAI API:**
+   - Utilizing the OpenAI API incurs costs related to token consumption.
+   - During the development and validation of the application, the total cost was approximately $0.31, taking into account the consumed tokens.
+
+- **Cost per Request:**
+   - In addition to the costs associated with token consumption, there is an additional cost for each request sent to the OpenAI API.
+   - The average cost per request is approximately $0.1, which should be considered when planning the ongoing use of the application.
