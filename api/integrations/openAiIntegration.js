@@ -35,7 +35,9 @@ const streamOpenAiText2Sql = async (prompt) => {
                 },
             ],
             model: "gpt-4-turbo",
-            response_format: { type: "json_object" },
+            response_format: { 
+                type: "json_object" 
+            },
         });
 
         return JSON.parse(completion.choices[0].message.content);
