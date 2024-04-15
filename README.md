@@ -8,10 +8,31 @@ turing-sql-machine/
 ├── api/                     # Main API logic
 │   ├── controllers/         # API controllers
 │   │   └── <controllerName>Controller.js
+│   │   └── <controllerTestName>Controller.test.js
 │   │
+│   ├── exceptions/         # Custom Exceptions
+│   │   └── <exceptionName>Exception.js
+│   │   └── <exceptionTestName>Exception.test.js
+│   │
+│   ├── integrations/       # External Integrations
+│   │   └── <integrationName>Integration.js
+│   │   └── <integrationTestName>Integration.test.js
+│   │
+│   ├── middlewares/        # Middlewares
+│   │   └── <middlewareName>Middleware.js
+│   │   └── <middlewareTestName>Middleware.test.js
 │   │
 │   ├── routes/              # API route definitions
 │   │   └── <routeName>Route.js
+│   │   └── <routeTestName>Route.test.js
+│   │
+│   ├── serializers/         # Serializers
+│   │   └── <serializerName>Serializer.js
+│   │   └── <serializerTestName>Serializer.test.js
+│   │
+│   ├── services/         # API Bussiness Logic
+│   │   └── <serviceName>service.js
+│   │   └── <serviceTestName>service.test.js
 │   │
 │   └── index.js
 │
