@@ -2,7 +2,6 @@ const { convertText2Sql } = require('./text2SqlController');
 const { streamOpenAiText2Sql } = require('../integrations/openAiIntegration');
 const { preparePrompt } = require('../services/text2SqlService');
 const { serializeResponse } = require('../serializers/text2SqlSerializer');
-const OpenAiDataFetchException = require('../exceptions/OpenAiDataFetchException');
 
 jest.mock('../integrations/openAiIntegration');
 jest.mock('../services/text2SqlService');
