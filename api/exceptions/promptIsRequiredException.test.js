@@ -13,6 +13,6 @@ describe('promptIsRequiredException', () => {
 
     it('should have the correct status code', () => {
         const error = new promptIsRequiredException();
-        expect(error.status).toBe(409);
+        expect(error.status).toBe(400);
     });
 });
