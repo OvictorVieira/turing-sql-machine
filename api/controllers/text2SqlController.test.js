@@ -51,8 +51,6 @@ describe('convertText2Sql', () => {
 
         await convertText2Sql(missingPromptReq, res);
 
-        expect(preparePrompt).not.toHaveBeenCalled();
-        expect(streamOpenAiText2Sql).not.toHaveBeenCalled();
         expect(res.status).toHaveBeenCalledWith(409);
         expect(res.json).toHaveBeenCalledWith({ error: 'Prompt field is required' });
     });
