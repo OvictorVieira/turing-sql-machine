@@ -45,4 +45,16 @@ describe('convertText2Sql', () => {
         expect(res.status).toHaveBeenCalledWith(500);
         expect(res.json).toHaveBeenCalledWith({ error: 'An unexpected error occurred' });
     });
+
+    it('should handle prompt not provided error and send appropriate error response', async () => {
+        const missingPromptReq = { body: { database_schema: 'Test schema' } };
+
+        await convertText2Sql(missingPromptReq, res);
+
+        expect(preparePrompt).not.toHaveBeenCalled();
+        expect(streamOpenAiText2Sql).not.toHaveBeenCalled();
+        expect(res.status).toHaveBeenCalledWith(409);
+        expect(res.json).toHaveBeenCalledWith({ error: 'Prompt field is required' });
+    });
+
 });
