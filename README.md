@@ -1,7 +1,5 @@
 # Turing Sql Machine
 
-TODO
-
 ## Project Structure
 
 ```
@@ -11,25 +9,11 @@ turing-sql-machine/
 │   ├── controllers/         # API controllers
 │   │   └── <controllerName>Controller.js
 │   │
-│   ├── mocks/                # Mock data or data-related utilities
-│   │   └── <mockName>Mock.js
 │   │
 │   ├── routes/              # API route definitions
 │   │   └── <routeName>Route.js
 │   │
 │   └── index.js
-│
-├── client/                  # React frontend
-│   ├── src/                 # Main React source code
-│   │   ├── components/      # React components
-│   │   │   └── <componentName>Component.js
-│   │   │
-│   │   └── index.js
-│   │
-│   ├── public/              # Public assets like HTML files
-│   │   └── index.html
-│   │
-│   └── webpack.config.js
 │
 ├── config/                  # Server and other configurations
 │   └── config.js
