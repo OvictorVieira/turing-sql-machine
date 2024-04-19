@@ -34,6 +34,7 @@ const streamOpenAiText2Sql = async (prompt) => {
                     content: prompt 
                 },
             ],
+            temperature: 0,
             model: "gpt-4-turbo",
             response_format: { 
                 type: "json_object" 
